@@ -62,7 +62,7 @@
 		- 목표: 프레임을 통해 버튼을 눌렀을 때 탭이 전환되도록 할 수 있다.
 
 ### 4. 쓰린이의 스케치북
-	12 삼립이립 Ellipse, 츄라이츄라이 Triangle, 탱글탱글 Rectangle, 롤리폴리 Polygon
+	12 삼立이립 Ellipse, 츄라이츄라이 Triangle, 탱글탱글 Rectangle, 롤리폴리 Polygon
 		- 예제: https://m.cafe.naver.com/winui3/48
 		- 목표: NuGet 패키지를 설치하여 캔버스에 도형을 출력하고 마우스를 드래그하였을 때, 도형이 움직이도록 할 수 있다.
 	
