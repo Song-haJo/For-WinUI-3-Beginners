@@ -108,8 +108,9 @@
 	6) 인용문은 “ ”를, 강조는 ‘ ’를 각각 사용
 	7) 기타는 일반 관례에 따름
 3. 참고문헌
-	1) 참고문헌은 10항목 내외로 IEEE 형식에 맞게 기술
-		참고: https://owl.purdue.edu/owl/research_and_citation/ieee_style/ieee_general_format.html
+	1) 참고문헌은 10항목 내외로 IEEE 형식에 맞게 기술<br/>
+
+			(참고: https://owl.purdue.edu/owl/research_and_citation/ieee_style/ieee_general_format.html)
 4. 시각자료
 	1) 되도록 깔끔하게 보이도록 하며, 코드는 캡쳐 사진이 아닌 직접 text로 기술한다.
 	2) Visual Studio의 기능이나 WinUI 3 Gallery의 화면, 실행 화면 등을 캡쳐하여 사용한다.
