@@ -37,14 +37,14 @@
 		- 예제: https://cafe.naver.com/whatisc/2677
 		- 목표: 라디오 버튼을 통해 이미지를 출력하고 전환할 수 있다.
 		
-	06 이미지 콜라주
+	06 이미지 콜라주__조송하
 		- 목표: VariableSizedWrapGrid를 통해 이미지를 앨범처럼 격자로 출력할 수 있다.
 		
 	07 메뉴바
 		- 예제: https://cafe.naver.com/whatisc/2674
 		- 목표: 메뉴바를 통해 메시지박스를 출력하고 TextBlock에 텍스트를 출력할 수 있다.
 		
-	08 키워드 기반 메모장
+	08 키워드 기반 메모장__조송하
 		- 예제: https://cafe.naver.com/whatisc/2679
 		- 목표: 콤보박스와 Pivot을 통해 키워드별로 메모를 분류할 수 있다.
 
