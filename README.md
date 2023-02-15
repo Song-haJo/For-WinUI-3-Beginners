@@ -1,4 +1,4 @@
-# For-the-WinUI-3-Beginners
+# For-WinUI-3-Beginners
 
 ## 가제
 - 야, 너두 WinUI 3 할 수 있어
