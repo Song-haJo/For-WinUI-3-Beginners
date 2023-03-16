@@ -1,0 +1,40 @@
+<Window
+    x:Class="printImg.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:printImg"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid ColumnSpacing="5" RowSpacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="590" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600" />
+            <ColumnDefinition Width="400" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Grid.Row="0" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage1.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="1" Grid.Row="0" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage2.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="0" Grid.Row="1" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage3.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="1" Grid.Row="1" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage4.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
