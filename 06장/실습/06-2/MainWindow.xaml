@@ -1,0 +1,32 @@
+<Window
+    x:Class="printImg.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:printImg"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="4" ItemHeight="268" ItemWidth="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image VariableSizedWrapGrid.RowSpan="2" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage1.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image VariableSizedWrapGrid.ColumnSpan="3" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage2.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image VariableSizedWrapGrid.ColumnSpan="3" VariableSizedWrapGrid.RowSpan="2" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage3.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+        <Image>
+            <Image.Source>
+                <BitmapImage UriSource="https://github.com/microsoft/WinUI-Gallery/blob/main/WinUIGallery/Assets/SampleMedia/LandscapeImage4.jpg?raw=true"/>
+            </Image.Source>
+        </Image>
+    </VariableSizedWrapGrid>
+</Window>
