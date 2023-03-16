@@ -2,7 +2,7 @@
 
 #include "MainWindow.g.h"
 
-namespace winrt::App1::implementation
+namespace winrt::printImg::implementation
 {
     struct MainWindow : MainWindowT<MainWindow>
     {
@@ -14,7 +14,7 @@ namespace winrt::App1::implementation
     };
 }
 
-namespace winrt::App1::factory_implementation
+namespace winrt::printImg::factory_implementation
 {
     struct MainWindow : MainWindowT<MainWindow, implementation::MainWindow>
     {
