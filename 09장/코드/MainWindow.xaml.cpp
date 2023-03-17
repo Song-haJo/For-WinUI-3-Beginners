@@ -27,16 +27,16 @@ namespace winrt::Browser::implementation
 }
 void winrt::Browser::implementation::MainWindow::MenuFlyoutItem_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
-url_text().PasteFromClipboard();
+        url_text().PasteFromClipboard();
 }
 
 
 void winrt::Browser::implementation::MainWindow::get_button_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
-    winrt::hstring sss = url_text().Text();
+      winrt::hstring sss = url_text().Text();
 
 
-    try
+   try
     {
         if (sss.size() == 0)
         {
