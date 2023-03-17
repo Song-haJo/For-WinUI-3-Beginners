@@ -1,0 +1,21 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="profile_image.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:profile_image"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel	Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <PersonPicture x:Name="personPicture" Height="300" VerticalAlignment="Top" Margin="0,30,50,0"/>
+        <RadioButtons Header="Options:">
+            		<RadioButton x:Name="ProfileImageRadio" Checked="ProfileImageRadio_Checked">Profile Image</RadioButton>
+            		<RadioButton x:Name="DisplayNameRadio" Checked="DisplayNameRadio_Checked">Display Name</RadioButton>
+            		<RadioButton x:Name="InitialsRadio"  Checked="InitialsRadio_Checked">Initials</RadioButton>
+        </RadioButtons>
+	</StackPanel>
+</Window>
