@@ -1,0 +1,26 @@
+<Window
+    x:Class="Browser.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Browser"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d">
+  <Grid RequestedTheme="Default">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*" />
+        </Grid.RowDefinitions>
+<TextBox x:Name="url_text" Grid.Row="0" Header="Enter url:" PlaceholderText="url" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5">
+            <TextBox.ContextFlyout>
+ <controls:MenuFlyout>
+                    <MenuFlyoutItem Text="paste" Icon="Paste" Click="MenuFlyoutItem_Click"></MenuFlyoutItem>
+                </controls:MenuFlyout>
+            </TextBox.ContextFlyout>
+        </TextBox>
+        <Button x:Name="get_button" Click="get_button_Click"  Content="Get" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+        <controls:WebView2 x:Name="MyWebView" Grid.Row="2" Source="http://www.google.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+    </Grid>
+</Window>
