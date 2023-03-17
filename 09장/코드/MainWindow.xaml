@@ -16,10 +16,10 @@
 <TextBox x:Name="url_text" Grid.Row="0" Header="Enter url:" PlaceholderText="url" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5">
             <TextBox.ContextFlyout>
  <controls:MenuFlyout>
-                    <MenuFlyoutItem Text="paste" Icon="Paste" Click="MenuFlyoutItem_Click"></MenuFlyoutItem>
-                </controls:MenuFlyout>
-            </TextBox.ContextFlyout>
-        </TextBox>
+            <MenuFlyoutItem Text="paste" Icon="Paste" Click="MenuFlyoutItem_Click"></MenuFlyoutItem>
+             </controls:MenuFlyout>
+           </TextBox.ContextFlyout>
+       </TextBox>
         <Button x:Name="get_button" Click="get_button_Click"  Content="Get" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
         <controls:WebView2 x:Name="MyWebView" Grid.Row="2" Source="http://www.google.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
     </Grid>
