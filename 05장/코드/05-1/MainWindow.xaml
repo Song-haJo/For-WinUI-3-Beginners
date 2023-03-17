@@ -13,6 +13,6 @@
     <StackPanel	Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
         <PersonPicture x:Name="personPicture" Height="300" 
 			VerticalAlignment="Top"
-			ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-			and-calendar/images/shoulder-tap-static-payload.png¡° />
+			ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.pngÂ¡Â° />
 	</StackPanel>
 </Window>
