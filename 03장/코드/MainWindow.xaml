@@ -8,28 +8,28 @@
     mc:Ignorable="d">
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10">
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="va" />
+            <TextBox x:Name="va"/>
             <TextBox x:Name="vb"/>
             <Button x:Name="myButton" Click="myButton_Click">+</Button>
             <TextBox x:Name="vc"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10">
-            <TextBox x:Name="ca" />
+            <TextBox x:Name="ca"/>
             <TextBox x:Name="cb"/>
             <Button x:Name="myButton1" Click="myButton1_Click">-</Button>
             <TextBox x:Name="cc"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="qa" />
+            <TextBox x:Name="qa"/>
             <TextBox x:Name="qb"/>
             <Button x:Name="myButton2" Click="myButton2_Click">*</Button>
             <TextBox x:Name="qc"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="ra" />
+            <TextBox x:Name="ra"/>
             <TextBox x:Name="rb"/>
             <Button x:Name="myButton3" Click="myButton3_Click">/</Button>
             <TextBox x:Name="rc"/>
