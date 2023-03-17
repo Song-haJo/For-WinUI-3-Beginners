@@ -1,0 +1,63 @@
+﻿<Window
+    x:Class="PenPaint.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PenPaint"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d">
+
+    <!--StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    </StackPanel-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="590"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ContentPresenter Background="Gainsboro" CornerRadius="8">
+                <MenuBar>
+                    <MenuBarItem Title="File">
+                        <MenuFlyoutItem Text="New File" Click="MenuFlyoutItem_Click"/>
+                        <MenuFlyoutItem Text="Save" Click="MenuFlyoutItem_Click_1"/>
+                        <MenuFlyoutItem Text="Load" Click="MenuFlyoutItem_Click_2"/>
+                        <MenuFlyoutItem Text="Exit" Click="MenuFlyoutItem_Click_3"/>
+                    </MenuBarItem>
+                </MenuBar>
+            </ContentPresenter>
+            <Slider AutomationProperties.Name="simple slider" Width="200" Grid.Column="0" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+        </StackPanel>
+
+        <canvas:CanvasControl Grid.Column="0" Grid.Row="1"
+                              PointerPressed="CanvasControl_PointerPressed"
+                              PointerReleased="CanvasControl_PointerReleased"
+                              PointerMoved="CanvasControl_PointerMoved"
+                              Draw="CanvasControl_Draw"  ClearColor="CornflowerBlue"/>
+
+        <AppBarToggleButton Grid.Column="1" Grid.Row="0"
+                            x:Name="ColorPicker" Icon="Shuffle" IsChecked="True"
+                            Label="Enable" Click="ColorPicker_Click"/>
+
+        <Border Grid.Column="1" Grid.Row="1" x:Name="colorPanel" Visibility="Visible">
+            <ColorPicker
+                ColorChanged="ColorPicker_ColorChanged"
+                ColorSpectrumShape="Ring"
+                IsMoreButtonVisible="False"
+                IsColorSliderVisible="True"
+                IsColorChannelTextInputVisible="True"
+                IsHexInputVisible="True"
+                IsAlphaEnabled="False"
+                IsAlphaSliderVisible="True"
+                IsAlphaTextInputVisible="True"/>
+        </Border>
+    </Grid>
+
+</Window>
