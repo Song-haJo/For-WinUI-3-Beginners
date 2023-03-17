@@ -35,7 +35,6 @@ void winrt::Browser::implementation::MainWindow::get_button_Click(winrt::Windows
 {
     winrt::hstring sss = url_text().Text();
 
-
     try
     {
         if (sss.size() == 0)
