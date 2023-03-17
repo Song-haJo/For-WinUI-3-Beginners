@@ -32,7 +32,7 @@ namespace winrt::caculator::implementation
     {
         throw hresult_not_implemented();
     }
-  using namespace std;
+    using namespace std;
     void MainWindow::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
         double a, b, c;
