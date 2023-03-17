@@ -27,7 +27,7 @@ namespace winrt::Browser::implementation
 }
 void winrt::Browser::implementation::MainWindow::MenuFlyoutItem_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
-        url_text().PasteFromClipboard();
+    url_text().PasteFromClipboard();
 }
 
 
