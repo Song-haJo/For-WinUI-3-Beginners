@@ -2,7 +2,7 @@
 
 #include "MainWindow.g.h"
 
-namespace winrt::caculator::implementation
+namespace winrt::Calculator::implementation
 {
     struct MainWindow : MainWindowT<MainWindow>
     {
@@ -10,14 +10,15 @@ namespace winrt::caculator::implementation
 
         int32_t MyProperty();
         void MyProperty(int32_t value);
-        void myButton_Click(Windows::Foundation::IInspectable const& sender, Microsoft::UI::Xaml::RoutedEventArgs const& args);
-        void myButton1_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
-        void myButton2_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
-        void myButton3_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
+
+        void add_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
+        void subtract_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
+        void multiply_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
+        void divide_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
     };
 }
 
-namespace winrt::caculator::factory_implementation
+namespace winrt::Calculator::factory_implementation
 {
     struct MainWindow : MainWindowT<MainWindow, implementation::MainWindow>
     {
