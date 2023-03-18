@@ -1,38 +1,23 @@
 <Window
-    x:Class="caculator.MainWindow"
+    x:Class="Calculator.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:caculator"
+    xmlns:local="using:Calculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10">
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="va"/>
-            <TextBox x:Name="vb"/>
-            <Button x:Name="myButton" Click="myButton_Click">+</Button>
-            <TextBox x:Name="vc"/>
-        </StackPanel>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10">
-            <TextBox x:Name="ca"/>
-            <TextBox x:Name="cb"/>
-            <Button x:Name="myButton1" Click="myButton1_Click">-</Button>
-            <TextBox x:Name="cc"/>
-        </StackPanel>
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Background="CornflowerBlue">
+        <TextBox x:Name="a" Margin="10"/>
+        <TextBox x:Name="b" Margin="10"/>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="qa"/>
-            <TextBox x:Name="qb"/>
-            <Button x:Name="myButton2" Click="myButton2_Click">*</Button>
-            <TextBox x:Name="qc"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="add" Margin="10" Click="add_Click">+</Button>
+            <Button x:Name="subtract" Margin="10" Click="subtract_Click">-</Button>
+            <Button x:Name="multiply" Margin="10" Click="multiply_Click">*</Button>
+            <Button x:Name="divide" Margin="10" Click="divide_Click">/</Button>
         </StackPanel>
-
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox x:Name="ra"/>
-            <TextBox x:Name="rb"/>
-            <Button x:Name="myButton3" Click="myButton3_Click">/</Button>
-            <TextBox x:Name="rc"/>
-        </StackPanel>
+        
+        <TextBox x:Name="c" Margin="10"/>
     </StackPanel>
 </Window>
