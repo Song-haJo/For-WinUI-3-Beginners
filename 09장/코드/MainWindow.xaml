@@ -7,15 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d">
-  <Grid RequestedTheme="Default">
+    <Grid RequestedTheme="Default">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" />
             <RowDefinition Height="1*"/>
             <RowDefinition Height="8*" />
         </Grid.RowDefinitions>
-<TextBox x:Name="url_text" Grid.Row="0" Header="Enter url:" PlaceholderText="url" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5">
-            <TextBox.ContextFlyout>
- <controls:MenuFlyout>
+     <TextBox x:Name="url_text" Grid.Row="0" Header="Enter url:" PlaceholderText="url" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5">
+             <TextBox.ContextFlyout>
+      <controls:MenuFlyout>
             <MenuFlyoutItem Text="paste" Icon="Paste" Click="MenuFlyoutItem_Click"></MenuFlyoutItem>
              </controls:MenuFlyout>
            </TextBox.ContextFlyout>
